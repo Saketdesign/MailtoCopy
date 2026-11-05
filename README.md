@@ -1,5 +1,8 @@
 # Mailto:Copy
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Chrome Web Store](https://img.shields.io/badge/Chrome_Web_Store-Available-blue.svg)](https://chromewebstore.google.com/detail/lbinbpbddnflfchnmbikkbniglehbaej)
+
 Mailto:Copy is a Chrome extension that copies email addresses from `mailto:` links instead of opening the default mail app.
 
 ## About
@@ -26,3 +29,9 @@ Chrome Web Store: https://chromewebstore.google.com/detail/lbinbpbddnflfchnmbikk
 - `styles.css` styles the confirmation toast and pulse overlay.
 - `paper-pulsing-border.js` renders the animated border effect.
 - `THIRD_PARTY_NOTICES.md` lists third-party attribution.
+
+
+## Community & Support
+
+- **Issue SLA:** Bug reports and feature proposals are answered within 24 hours.
+- **Discussions:** Join our [GitHub Discussions](https://github.com/Saketdesign/MailtoCopy/discussions).

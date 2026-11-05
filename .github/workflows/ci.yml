@@ -1,0 +1,11 @@
+name: CI
+on: [push, pull_request]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate manifest.json syntax
+        run: python3 -c "import json; json.load(open('manifest.json'))"
+      - name: Package extension artifact
+        run: zip -r mailtocopy.zip manifest.json content.js styles.css paper-pulsing-border.js icons
