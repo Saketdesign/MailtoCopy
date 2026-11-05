@@ -1,16 +1,16 @@
-# Contributing to Mailto:Copy
+# contributing to mailto:copy
 
-Thank you for contributing!
+thanks for contributing.
 
-## Local Development & Testing
+## local development & testing
 
-1. Open `chrome://extensions` in Google Chrome.
-2. Toggle on **Developer mode** in the top right.
-3. Click **Load unpacked** and choose this repository directory.
-4. Test by clicking any `mailto:` link on a web page.
+1. open `chrome://extensions` in google chrome.
+2. turn on **developer mode** in the top right.
+3. click **load unpacked** and choose this repository directory.
+4. test by clicking any `mailto:` link on a web page.
 
-## Guidelines
+## guidelines
 
-- Keep the extension dependency-free and lightweight.
-- Respect accessibility settings like `prefers-reduced-motion`.
-- PRs and issues are reviewed within 24 hours.
+- keep the extension dependency-free and lightweight.
+- respect accessibility settings like `prefers-reduced-motion`.
+- prs and issues are reviewed within 24 hours.
