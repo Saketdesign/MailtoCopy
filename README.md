@@ -1,37 +1,39 @@
-# Mailto:Copy
+# mailto:copy
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Chrome Web Store](https://img.shields.io/badge/Chrome_Web_Store-Available-blue.svg)](https://chromewebstore.google.com/detail/lbinbpbddnflfchnmbikkbniglehbaej)
+[![license: mit](https://img.shields.io/badge/license-mit-yellow.svg)](LICENSE)
+[![chrome web store](https://img.shields.io/badge/chrome_web_store-available-blue.svg)](https://chromewebstore.google.com/detail/lbinbpbddnflfchnmbikkbniglehbaej)
+[![ci](https://github.com/Saketdesign/MailtoCopy/actions/workflows/ci.yml/badge.svg)](https://github.com/Saketdesign/MailtoCopy/actions/workflows/ci.yml)
 
-Mailto:Copy is a Chrome extension that copies email addresses from `mailto:` links instead of opening the default mail app.
+chrome extension that copies email addresses from mailto links instead of opening a mail app.
 
-## About
+## how it works
 
-Clicking an email link on a web page normally opens a mail client. Mailto:Copy intercepts those links, extracts the email address, decodes it, and writes it to your clipboard.
+clicking an email link usually opens a desktop mail app you didn't ask for. mailto:copy intercepts the click, extracts and decodes the email address, and copies it to your clipboard.
 
-After a successful copy, the extension shows a small confirmation toast, plays a short success cue, and briefly lights the viewport edge. Motion-sensitive users keep the clipboard behavior while the pulse animation is disabled through `prefers-reduced-motion`.
+after copying, the extension displays a quick confirmation toast and a brief pulse around the viewport edge. if you have `prefers-reduced-motion` enabled in your system, the animation is skipped while clipboard copying still works.
 
-## Chrome Extension Link
+## install
 
-Chrome Web Store: https://chromewebstore.google.com/detail/lbinbpbddnflfchnmbikkbniglehbaej
+- [chrome web store](https://chromewebstore.google.com/detail/lbinbpbddnflfchnmbikkbniglehbaej)
+- or load unpacked in chrome:
+  1. go to `chrome://extensions`
+  2. turn on **developer mode**
+  3. click **load unpacked**
+  4. select this folder
 
-## Install Locally
+## files
 
-1. Open `chrome://extensions`.
-2. Enable **Developer mode**.
-3. Select **Load unpacked**.
-4. Choose this project folder.
+- `manifest.json`: manifest v3 extension setup and permissions
+- `content.js`: catches mailto clicks and handles clipboard copying
+- `styles.css`: toast and pulsing border styles
+- `paper-pulsing-border.js`: animated border canvas effect
+- `THIRD_PARTY_NOTICES.md`: third-party attribution
 
-## Files
+## community & support
 
-- `manifest.json` defines the Manifest V3 extension metadata and content scripts.
-- `content.js` intercepts `mailto:` interactions and handles clipboard feedback.
-- `styles.css` styles the confirmation toast and pulse overlay.
-- `paper-pulsing-border.js` renders the animated border effect.
-- `THIRD_PARTY_NOTICES.md` lists third-party attribution.
+- issue sla: bug reports and questions are answered within 24 hours.
+- discussions: join our [github discussions](https://github.com/Saketdesign/MailtoCopy/discussions).
 
+## license
 
-## Community & Support
-
-- **Issue SLA:** Bug reports and feature proposals are answered within 24 hours.
-- **Discussions:** Join our [GitHub Discussions](https://github.com/Saketdesign/MailtoCopy/discussions).
+[mit](LICENSE) © 2026 Saket Joshi
